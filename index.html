@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ash Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- =======================
+         ヘッダー
+    ======================= -->
+    <header>
+        <h1>Ash</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#post">Post</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =======================
+         Heroセクション
+    ======================= -->
+    <section id="home" class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>業務効率化、サプライチェーン分野のデータ分析を行っています</p>
+    </section>
+
+    <!-- =======================
+         Worksセクション
+    ======================= -->
+    <section id="works" class="works">
+        <h2>Works</h2>
+        <div class="work-grid">
+            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 1" class="clickable"><p>Project 1</p></div>
+            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 2" class="clickable"><p>Project 2</p></div>
+            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 3" class="clickable"><p>Project 3</p></div>
+            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 4" class="clickable"><p>Project 4</p></div>
+            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 5" class="clickable"><p>Project 5</p></div>
+        </div>
+    </section>
+
+    <!-- =======================
+         Postセクション（記事一覧）
+    ======================= -->
+    <section id="post" class="post">
+        <h2>Post</h2>
+        <div id="post-list" class="post-list">
+            <!-- JavaScriptで記事を自動生成 -->
+        </div>
+    </section>
+
+    <!-- =======================
+         Aboutセクション
+    ======================= -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Experienced in Supply Chain and Logistics, based in Japan.</p>
+    </section>
+
+    <!-- =======================
+         フッター
+    ======================= -->
+    <footer id="contact">
+        <p>Follow me on <a href="https://github.com/" target="_blank">GitHub</a></p>
+    </footer>
+
+    <!-- =======================
+         モーダル（画像拡大）
+    ======================= -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- =======================
+         JavaScript読み込み
+    ======================= -->
+    <script src="script.js"></script>
+</body>
+</html>
