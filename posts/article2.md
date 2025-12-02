@@ -1,8 +1,7 @@
 ## [ホームに戻る](../index.html)
 
 # マークダウン記法
-## 参考
-[しまぶーのIT大学](https://www.youtube.com/watch?v=tjygVZLLeYc)
+参考: [しまぶーのIT大学](https://www.youtube.com/watch?v=tjygVZLLeYc)
 
 ## 見出しの書き方
 ### シャープ+半角スペース
