@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&lbrack;&#x30db;&#x30fc;&#x30e0;&#x306b;&#x623b;&#x308b;&rbrack;&lpar;&period;&period;&sol;index&period;html&rpar;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h2 id="ホームに戻る"><a href="../index.html">ホームに戻る</a></h2>
+<h1 id="マークダウン記法">マークダウン記法</h1>
+<h2 id="参考">参考</h2>
+<p><a href="https://www.youtube.com/watch?v=tjygVZLLeYc">しまぶーのIT大学</a></p>
+<h2 id="見出しの書き方">見出しの書き方</h2>
+<h3 id="シャープ半角スペース">シャープ+半角スペース</h3>
+<pre><code># 見出し
+## 見出し
+### 見出し
+</code></pre>
+<h2 id="リスト-箇条書き">リスト 箇条書き</h2>
+<h3 id="箇条書きの場合ハイフン半角スペース入れ子にしたい場合タブハイフン半角スペース">箇条書きの場合、ハイフン+半角スペース　（入れ子にしたい場合、タブ+ハイフン+半角スペース）</h3>
+<ul>
+<li>リスト
+<ul>
+<li>リスト</li>
+</ul>
+</li>
+</ul>
+<pre><code>- リスト
+    - リスト
+</code></pre>
+<h2 id="リスト番号付き">リスト　番号付き</h2>
+<h3 id="番号付きの場合半角数字ピリオド半角スペースmdコードの数字は無視して連番になるので1で作成するほうが良い">番号付きの場合、半角数字＋ピリオド＋半角スペース（mdコードの数字は無視して連番になるので、&quot;1.&quot;で作成するほうが良い）</h3>
+<ol>
+<li>番号</li>
+<li>番号</li>
+</ol>
+<pre><code>1. 番号
+1. 番号
+</code></pre>
+<h1 id="リンク">リンク</h1>
+<h2 id="鍵括弧で表示名を囲う丸括弧でリンク先urlをいれる">鍵括弧で表示名を囲う＋丸括弧でリンク先URLをいれる</h2>
+<p><a href="https://yahoo.co.jp">yahoo</a></p>
+<pre><code>[yahoo](https://yahoo.co.jp)
+</code></pre>
+<h1 id="エスケープ">エスケープ</h1>
+<h2 id="バックスラッシュでエスケープ">バックスラッシュでエスケープ</h2>
+<pre><code>\[yahoo\]\(https://yahoo.co.jp\)
+
+</code></pre>
+<h1 id="リンクを繰り返し使用する場合">リンクを繰り返し使用する場合</h1>
+<h2 id="鍵括弧を変数のように使用してｕｒｌ情報を格納する">鍵括弧を変数のように使用してＵＲＬ情報を格納する</h2>
+<p><a href="(https://yahoo.co.jp)">ヤフー</a><br>
+<a href="(https://yahoo.co.jp)">Yahoo!</a><br>
+<a href="(https://yahoo.co.jp)">Yahoo!Japan</a></p>
+<pre><code>[yahoo]: (https://yahoo.co.jp)
+[ヤフー][yahoo]  
+[Yahoo!][yahoo]  
+[Yahoo!Japan][yahoo]
+</code></pre>
+<h1 id="改行-brタグ">改行 brタグ</h1>
+<h2 id="文末にスペース2個で改行">文末にスペース2個で改行</h2>
+<p>改行<br>
+改行</p>
+<pre><code>改行  
+改行
+</code></pre>
+<h1 id="段落pタグ">段落　pタグ</h1>
+<h2 id="改行を２回押す">改行を２回押す</h2>
+<p>段落は改行２回</p>
+<p>段落は改行２回</p>
+<pre><code>段落は改行２回
+
+段落は改行２回
+
+</code></pre>
+<h1 id="引用">引用</h1>
+<h2 id="山かっこの閉じ">山かっこの閉じ</h2>
+<blockquote>
+<p>引用しています
+そのまま引用を続けられます</p>
+</blockquote>
+<pre><code>&gt; 引用しています
+&gt; そのまま引用を続けられます
+</code></pre>
+<h1 id="インラインのコード">インラインのコード</h1>
+<h2 id="バッククウォートで文字を囲む">バッククウォートで文字を囲む</h2>
+<p>私の得意なスキルは<code>TypeScript</code>です</p>
+<pre><code>私の得意なスキルは`TypeScript`です
+
+</code></pre>
+<h1 id="ブロックのコード">ブロックのコード</h1>
+<h2 id="バッククウォート３つ">バッククウォート３つ</h2>
+<h1 id="ブロックのコードでシンタックスハイライト">ブロックのコードでシンタックスハイライト</h1>
+<h2 id="バッククウォートの後に言語javascriptのように">バッククウォートの後に言語　```javascriptのように</h2>
+<pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">hoge</span>(<span class="hljs-params"></span>){
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;コード書けるよ！&quot;</span>
+}
+</code></pre>
+<h1 id="画像の挿入">画像の挿入</h1>
+<p>ビックリマーク+鍵括弧+丸括<br>
+丸括弧のなかに画像UR<br>
+鍵括弧の中のテキストはalt属性</p>
+<pre><code>![ダミー画像](https://placehold.jp/150X150.png)
+</code></pre>
+<h1 id="文字の装飾">文字の装飾</h1>
+<p>斜体はアスタリスクで囲む<br>
+太字はアスタリスク２個で囲む　計４個<br>
+訂正線はチルダ２個で囲む　計４個<br>
+斜体かつ太字はアスタリスク３個で囲む　計６個<br>
+アスタリスクはアンダーバーで代替もできる</p>
+<p><em>斜体</em>
+<strong>太字</strong>
+<s>訂正線</s>
+<em><strong>斜体で太字</strong></em></p>
+<pre><code>*斜体*
+**太字**
+~~訂正線~~
+***斜体で太字***
+</code></pre>
+<h1 id="水平線">水平線</h1>
+<p>ハイフン３つで水平線<br>
+アンダーバー３つでも</p>
+<h2 id="上">上</h2>
+<p>下</p>
+<pre><code>上
+---
+下
+
+</code></pre>
+<h1 id="テーブル">テーブル</h1>
+<p>縦線とハイフンを組み合わせて作成する</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>年齢</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aさん</td>
+<td>20</td>
+</tr>
+<tr>
+<td>bさん</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<pre><code>名前|年齢
+-|-
+aさん | 20
+bさん | 30
+</code></pre>
+<h2 id="ホームに戻る-1"><a href="../index.html">ホームに戻る</a></h2>
+
+            
+            
+        </body>
+        </html>
