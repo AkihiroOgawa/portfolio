@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const posts = [
         "posts/article1.html",
         "posts/article2.html",
-        "posts/article3.html"
+        "posts/article3.html",
+        "posts/article4.html",
+        "posts/article5.html"
     ];
 
     posts.forEach(post => {
