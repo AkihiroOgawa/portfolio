@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&lbrack;&#x30db;&#x30fc;&#x30e0;&#x306b;&#x623b;&#x308b;&rbrack;&lpar;&period;&period;&sol;index&period;html&rpar;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h2 id="ホームに戻る"><a href="../index.html">ホームに戻る</a></h2>
+<h1 id="統計学p値">統計学:P値</h1>
+<p>p値が腑に落ちない期間が長くあった。</p>
+<p>もろもろの学習教材、Youtuberのおかげで、わからせてもらえるようになった。</p>
+<p>p値理解を困難にさせる背景として、p値が登場する統計検定の文脈で諸々新しい用語がでるためだった。</p>
+<p>帰無仮説<br>
+有意水準(α)<br>
+臨海値<br>
+棄却域</p>
+<p>もセットで理解、整理していかないといけない。</p>
+<hr>
+<h1 id="帰無仮説とp値">帰無仮説とp値</h1>
+<p>統計検定の文脈で、否定したい仮説のことを帰無仮説とする。</p>
+<ul>
+<li>このコインは正しいコインである（表、裏出る確率が0.5なのか怪しいんで検定）</li>
+<li>メーカーが平均内容量は１５０ｍｌと主張している（違うだろうと怪しいんで検定）</li>
+<li>白いカラスはいない（「白いカラスはいる」という存在証明を棄却するのは難しい。対立仮説として統計的に白いカラスを見つけるという仮説設定のほうが適している）</li>
+</ul>
+<p>帰無仮説に設定した仮説を無に帰すために検定を行う。帰無仮説を論破して否定、つぶすのが統計検定。</p>
+<p>帰無仮説の条件のもとで、観測されたデータのz値（分布上のスコア）を確認。</p>
+<p>確認したｚ値が起こる確率をp値。</p>
+<p>否定したい仮説のもとで観測するデータのなので、
+p値は「どのくらいレアな」確率、という形容詞がつくことなる</p>
+<p>あなたの帰無仮説認めたら、ここにあるデータはpの確率でしか起きないレアケースじゃないか？
+という投げかけを行う態度</p>
+<p>「レア」とみなす基準（有意水準）を設定して、pの確率がこのくらいだったら、レアなものとして、棄却できるものとみなす
+という論法になる。</p>
+<hr>
+<h1 id="有意水準臨海値棄却域">有意水準、臨海値、棄却域</h1>
+<p>手元にある観測データがどのくらいの確率で起きるか（p値）を確認する前に、　　
+棄却（否定する）基準を設定する。その設置値が有意水準になる。</p>
+<p>レア度をみなす基準を有意水準として設定する。</p>
+<p>その基準に達したとき、有意差あり（帰無仮説を棄却できる）と主張できる。</p>
+<p>有意水準を決めると、有意水準をに対応する分布上の臨海値が把握できる。</p>
+<p>例えば、有意水準　0.05で、片側検定ならば、z ≈ 1.645が臨海値。</p>
+<p>臨海値は棄却域(z値の範囲)との境界線になる。</p>
+<hr>
+<h1 id="用語の関係性の整理">用語の関係性の整理</h1>
+<p>z値　VS　臨海値　　＞＞　分布上の位置を比較</p>
+<ul>
+<li>z値：観測データを標準化した位置（標準正規分布上のスコア）。</li>
+<li>臨海値：有意水準（α）に基づいて決める「境界の数値」。臨界値より極端な値の範囲を「棄却域」と呼ぶ。</li>
+</ul>
+<p>p値　VS　有意水準　＞＞　確率を比較</p>
+<ul>
+<li>p値：帰無仮説の下で、観測結果以上に極端な結果が出る確率。z値のスコアから確認できる。</li>
+<li>有意水準：帰無仮説を棄却する基準。</li>
+</ul>
+<hr>
+<h1 id="白いカラスはいないという帰無仮説">白いカラスはいないという帰無仮説</h1>
+<ul>
+<li>
+<p>帰無仮説 (H₀)：「白いカラスはいない」</p>
+</li>
+<li>
+<p>対立仮説 (H₁)：「白いカラスはいる」</p>
+</li>
+<li>
+<p>観測データ：100羽中、白いカラス1羽</p>
+</li>
+<li>
+<p>有意水準：0.05／臨海値：片側検定　1.645</p>
+</li>
+<li>
+<p>p値：0.1574／z値：1.005</p>
+</li>
+<li>
+<p>有意水準＜p値
+‐　「白いカラスはないない」という帰無仮説は棄却できない</p>
+</li>
+</ul>
+<p><img src="../assets/images/art5_1.png" alt="sample"></p>
+<hr>
+<h1 id="物流現場での応用事例">物流現場での応用事例</h1>
+<p>オペレーションの改善活動の前後データの比較を行い、有意性を考える。</p>
+<p>例えば、
+改善活動前のオペレーションにかかる時間を記録して、サンプルを収集しておく<br>
+改善活動後のオペレーションに用する時間を記録する</p>
+<p>改善活動前のオペレーションにかかる平均時間、分布図に対して<br>
+改善活動後のオペレーションにかかる平均時間のtスコア、p値を確認。</p>
+<p>改善活動前のオペレーショ平均時間を基準とした分布図をベースとして、<br>
+改善活動後のオペレーションにかかる平均時間がどのくらいの確率で確認できるスコアを確認することで、<br>
+統計的検証で、改善が活動したか確認することができる。</p>
+<h2 id="ホームに戻る-1"><a href="../index.html">ホームに戻る</a></h2>
+
+            
+            
+        </body>
+        </html>
