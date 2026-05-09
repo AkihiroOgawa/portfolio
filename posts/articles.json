@@ -9,5 +9,15 @@
     "title": "マークダウン記法",
     "category": "言語",
     "url": "posts/article2.html"
+  },
+  {
+    "title": "相加平均と相乗平均",
+    "category": "統計学",
+    "url": "posts/article3.html"
+  },
+    {
+    "title": "データのバラつき",
+    "category": "統計学",
+    "url": "posts/article4.html"
   }
 ]
