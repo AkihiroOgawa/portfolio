@@ -19,5 +19,16 @@
     "title": "データのバラつき",
     "category": "統計学",
     "url": "posts/article4.html"
+  },
+    {
+    "title": "P値",
+    "category": "統計学",
+    "url": "posts/article5.html"
+  },
+      {
+    "title": "Python環境設定、ターミナル、シェル、",
+    "category": "Environment",
+    "url": "posts/article7.html"
   }
+
 ]
