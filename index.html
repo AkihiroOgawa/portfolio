@@ -1,113 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ash Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ash Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- =======================
-         ヘッダー
-    ======================= -->
-    <header>
-        <h1>Ash</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#post">Post</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Ash</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#post">Post</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <header class="hero-title">
+      <h1>Welcome to My Portfolio</h1>
+      <p class="lead">"業務"をスマートに</p>
     </header>
 
-    <!-- =======================
-         Heroセクション
-    ======================= -->
-    <section id="home" class="hero">
-        <header>
-            <h1>Welcome to My Portfolio</h1>
-        </header>
-        <blockquote>
-            <p>サプライチェーン領域をメインにキャリアを積んできました</p>
-        </blockquote>
-        <hr>
+    <hr class="divider">
+
+    <div class="hero-container">
+      <div class="hero-left">
         <article>
-            <h2>取り組み内容</h2>
-            <p>
-                業務フローを分析・可視化し課題を抽出、効率化・自動化を推進する新業務を設計・提案。<br>
-                Python、Excel VBA、Power Automate、Power Appsを活用し、実装まで行ってきました。<br>
-                通関や輸送、倉庫、配送業者などサプライヤーチェーン全体の業務に携わる各協力会社と交渉を行いながら、<br>
-                荷主に最適なソリューション、業務設計を行ってきました。<br>
-                ※本サイトの"Post"には、学習している言語やアカデミック領域の事柄を備忘や整理のために投稿することもあるのでご理解ください。
-                <br>
-                <br>
-                <br>
-                経歴<br>　
-                コンサルティング会社（アナリスト）　>>　海外　>>　自動車部品メーカー(購買/営業)　>>　日系総合商社現地法人(営業)　>>　華僑と起業(物流会社経営） >> 帰国 >> 欧州メーカー(新規事業物流担当）　>> 米国サプライチェーン会社(新規事業担当） 
-                TOEIC Score 840 (Nov.16.2025) Listening 440 / Reading 400<br>
-                統計検定2級 <br>
-            </p>
+          <h2>はじめに</h2>
+          <p>
+            業務設計を行います。既存業務フローの可視化、課題抽出を行い、効率化・自動化を実現した新業務の設計と実装を行います。
+            <strong>Python, Google Workspace, Microsoft365のツール</strong>
+            を活用し、実装まで一貫して行っています。
+          </p>
+          <p class="hero-note">
+            <small>※「Post」には、学習言語やアカデミックな備忘録を投稿しています。</small>
+          </p>
         </article>
-    </section>
-
-    <!-- =======================
-         Worksセクション
-    ======================= -->
-    <section id="works" class="works">
-        <h2>Works</h2>
-        <div class="work-grid">
-            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 1" class="clickable"><p>Project 1</p></div>
-            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 2" class="clickable"><p>Project 2</p></div>
-            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 3" class="clickable"><p>Project 3</p></div>
-            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 4" class="clickable"><p>Project 4</p></div>
-            <div class="work-item"><img src="assets/sample1.jpg" alt="Project 5" class="clickable"><p>Project 5</p></div>
-        </div>
-    </section>
-
-    <!-- =======================
-         Postセクション（記事一覧）
-    ======================= -->
-    <section id="post" class="post">
-        <h2>Post</h2>
-        <div id="post-list" class="post-list">
-            <!-- JavaScriptで記事を自動生成 -->
-        </div>
-    </section>
-
-    <!-- =======================
-         Aboutセクション
-    ======================= -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>Experienced in Supply Chain and Logistics, based in Japan.</p>
-    </section>
-
-    <!-- =======================
-         フッター
-    ======================= -->
-    <footer id="contact">
-        <p>
-            Follow me on 
-            <a href="https://github.com/AkihiroOgawa" target="_blank">GitHub</a> |
-            <a href="https://x.com/aki11hiro1" target="_blank">X</a>
-        </p>
-    </footer>
-
-    <!-- =======================
-         モーダル（画像拡大）
-    ======================= -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImg">
+      </div>
     </div>
+  </section>
 
-    <!-- =======================
-         JavaScript読み込み
-    ======================= -->
-    <script src="script.js"></script>
+  <!-- Post -->
+  <section id="post" class="post">
+    <h2>Post</h2>
+    <div class="post-list" id="post-list"></div>
+  </section>
+
+  <script src="main.js"></script>
 </body>
 </html>
